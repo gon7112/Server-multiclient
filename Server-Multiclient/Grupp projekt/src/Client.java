@@ -36,7 +36,6 @@ public class Client implements Runnable{
             name += ": ";
 
             br = new BufferedReader(new InputStreamReader(System.in));
-            //då man anger "exit" i chatten så funkar inte det som står nedan
             while (!Str.equalsIgnoreCase("exit")) {
                 Str = br.readLine();
                 dout.writeUTF(name + Str);
